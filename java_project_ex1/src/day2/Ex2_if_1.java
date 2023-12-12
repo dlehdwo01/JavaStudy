@@ -4,7 +4,7 @@ public class Ex2_if_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int age = 20;
+//		int age = 20;
 
 		// 조건문 ()조건 내 true 혹은 false만 들어 갈수있으며 true시에만 {}내에 입력어들이 실행됨
 //		if (age > 10) {

@@ -15,7 +15,7 @@ public class Ex5_UpAndDownGame {
 
 		for (;;) {
 			cnt++; // 매회 카운트 +1
-			System.out.print(cnt + "번째 시도, 숫자를 입력해주세요. : ");  
+			System.out.print(cnt + "번째 시도, 숫자를 입력해주세요. : ");
 			int ans = in.nextInt();
 			if (ans == random) {
 				System.out.println("정답입니다! " + cnt + "번째에 맞추셨습니다.");
@@ -25,6 +25,8 @@ public class Ex5_UpAndDownGame {
 			} else {
 				System.out.println("UP!");
 			}
+			in.close();
 		}
+
 	}
 }

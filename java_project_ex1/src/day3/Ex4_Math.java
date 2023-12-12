@@ -8,9 +8,9 @@ public class Ex4_Math {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
 		System.out.print("첫번째 숫자 입력 : ");
-		int num1 = in.nextInt();
+//		int num1 = in.nextInt();
 		System.out.print("두번째 숫자 입력 : ");
-		int num2 = in.nextInt();
+//		int num2 = in.nextInt();
 
 		// 두개의 숫자 중 큰 수는 oo 입니다.
 
@@ -21,7 +21,7 @@ public class Ex4_Math {
 //		}
 
 		// 1. 삼항연산자
-		int max2 = (num1 >= num2) ? num1 : num2;		
+//		int max2 = (num1 >= num2) ? num1 : num2;		
 		// 아래 식을 삼항연산자를 이용하여 위 식처럼 간략하게 코딩 할 수 있다		
 //		if (num1 >= num2) {
 //			max2 = num1;
@@ -40,7 +40,7 @@ public class Ex4_Math {
 		min = (a < b) ? a : b;
 		System.out.println("최대값 : " + max);
 		System.out.println("최소값 : " + min);
-		
+		in.close();
 
 		// 2. 메소드(함수)를 이용
 //		int max = Math.max(num1, num2);

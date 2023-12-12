@@ -22,7 +22,7 @@ public class Ex4_elseif_1 {
 		} else {
 			System.out.println("F등급 입니다.");
 		}
-		
+		s.close();
 	}
 
 }

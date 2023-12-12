@@ -1,13 +1,13 @@
 package day3;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Ex1_Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);
-		int i = in.nextInt();
+//		Scanner in = new Scanner(System.in);
+//		int i = in.nextInt();
 
 		// 0번 문제
 //		int sum = 0;

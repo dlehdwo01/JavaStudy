@@ -8,7 +8,7 @@ public class Ex5_if_Test {
 		// TODO Auto-generated method stub
 		Scanner s = new Scanner(System.in);
 		System.out.print("숫자를 입력해주세요 : ");
-		int num1 = s.nextInt();
+//		int num1 = s.nextInt();
 
 //		// 1번 문제
 //		if(num1%5==0) {
@@ -37,6 +37,7 @@ public class Ex5_if_Test {
 //			System.out.println("10보다 작은 수");
 //		}
 
+		s.close();
 	}
 
 }

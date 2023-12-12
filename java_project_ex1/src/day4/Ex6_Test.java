@@ -1,6 +1,6 @@
 package day4;
 
-import java.util.Random;
+//import java.util.Random;
 import java.util.Scanner;
 
 public class Ex6_Test {
@@ -8,7 +8,7 @@ public class Ex6_Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
-		Random ran = new Random();
+//		Random ran = new Random();
 
 		// 1번 문제
 //		for (int i = 10; i <= 50; i++) {
@@ -67,6 +67,7 @@ public class Ex6_Test {
 				i--;
 			}
 		}
+		
 
 		// 7번 문제
 //		int array[] = new int[5];
@@ -134,6 +135,8 @@ public class Ex6_Test {
 //				break;
 //			}
 //		}
+		in.close();
+		
 	}
 
 }

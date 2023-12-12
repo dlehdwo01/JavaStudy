@@ -1,13 +1,13 @@
 package day3;
 
-import java.util.Random;
-import java.util.Scanner;
+//import java.util.Random;
+//import java.util.Scanner;
 
 public class Ex3_Random {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Random ran = new Random();
+//		Random ran = new Random();
 //		for (int i = 0; i < 20; i++) {
 //			System.out.println(ran.nextInt(100)+1);			
 //		}

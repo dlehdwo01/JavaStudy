@@ -22,5 +22,6 @@ public class Ex3_if_2 {
 		} else {
 			System.out.println("3의 배수가 아닙니다.");
 		}		
+		s.close();
 	}
 }

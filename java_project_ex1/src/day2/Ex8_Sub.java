@@ -1,6 +1,5 @@
 package day2;
 
-import java.util.Scanner;
 
 public class Ex8_Sub {
 

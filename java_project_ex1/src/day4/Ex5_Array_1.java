@@ -1,6 +1,6 @@
 package day4;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ex5_Array_1 {
@@ -70,7 +70,7 @@ public class Ex5_Array_1 {
 		System.out.println("배열에 입력된 최대값은 " + max + " 입니다. 위치는 " + cnt + " 입니다");
 		
 		
-		
+		in.close();
 		
 		
 		

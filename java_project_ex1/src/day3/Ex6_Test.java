@@ -28,11 +28,10 @@ public class Ex6_Test {
 //			}
 //		}
 
-		
-		//구구단 맞추기 게임 만들기
-		
+		// 구구단 맞추기 게임 만들기
+
 		int cnt = 0; // 정답 수
-		System.out.print("몇 문제를 푸시겠습니까? : ");		
+		System.out.print("몇 문제를 푸시겠습니까? : ");
 		int question = in.nextInt(); // 문제 수
 		for (int i = 0; i < question; i++) {
 			int a = ran.nextInt(8) + 2; // 2~9
@@ -40,13 +39,15 @@ public class Ex6_Test {
 			System.out.print(a + " * " + b + " = ");
 			int ans = in.nextInt(); // 정답 입력
 			if (ans == a * b) {
-				cnt++; 
+				cnt++;
 				System.out.println("정답 !");
 			} else {
 				System.out.println("오답 ! 정답은 : " + (a * b) + " 입니다.");
 			}
 		}
+		in.close();
 		System.out.println(question + " 문제 풀이 끝 !");
-		System.out.println((cnt * (100/question)) + " 점 입니다! (한 문제당 "+ (100/question) + "점)");
+		System.out.println((cnt * (100 / question)) + " 점 입니다! (한 문제당 " + (100 / question) + "점)");
+
 	}
 }

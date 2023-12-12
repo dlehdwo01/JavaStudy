@@ -28,6 +28,7 @@ public class Ex1_while {
 			i++;
 		}
 		System.out.println(sum);
+		in.close();
 
 	}
 

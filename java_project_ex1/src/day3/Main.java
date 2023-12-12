@@ -22,5 +22,6 @@ public class Main {
 		for (int k = 0; k < N; k++) {
 			System.out.println(arr[k] + " ");
 		}
+		in.close();
 	}
 }

@@ -28,5 +28,6 @@ public class Ex2_while_UpAndDown {
 				System.out.println("UP");
 			}
 		}
+		in.close();
 	}
 }

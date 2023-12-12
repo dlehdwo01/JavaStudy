@@ -19,8 +19,8 @@ public class Ex5_Array_2 {
 			int input = in.nextInt();
 			a[i] = input;
 		}
-		int max = a[0];
-		int min = a[0];
+//		int max = a[0];
+//		int min = a[0];
 		int maxidx = 0;
 		int minidx = 0;
 
@@ -49,7 +49,7 @@ public class Ex5_Array_2 {
 //		System.out.println("최대값은 " + max + " 입니다.");
 //		System.out.println("최대값의 위치는 " + idx + " 입니다.");
 		System.out.println("최대값과 최소값의 순서를 변경한 배열 " + Arrays.toString(a));
-
+		in.close();
 	}
 
 }

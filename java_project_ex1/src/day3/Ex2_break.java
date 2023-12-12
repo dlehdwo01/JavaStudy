@@ -1,12 +1,12 @@
 package day3;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Ex2_break {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);
+//		Scanner in = new Scanner(System.in);
 //		System.out.print("첫번째 숫자 입력 : ");
 //		int num1=in.nextInt();
 //		System.out.print("두번째 숫자 입력 : ");
