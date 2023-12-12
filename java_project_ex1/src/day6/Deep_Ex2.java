@@ -43,22 +43,22 @@ public class Deep_Ex2 {
 
 		int evenidx = 0;
 
-		// 2-4 반복
+		//3-4 반복
 		for (int j = oddcnt; j < arr.length; j++) {
-			// 2-1 짝수 위치값 구하기
+			// 3-1 짝수 위치값 구하기
 			for (int i = j; i < arr.length; i++) {
 				if (arr[i] % 2 == 0) {
 					evenidx = i;
 					break;
 				}
 			}
-			// 2-2 배열내 짝수 중 가장 작은 짝수의 위치값 구하기
+			// 3-2 배열내 짝수 중 가장 작은 짝수의 위치값 구하기
 			for (int i = j; i < arr.length; i++) {
 				if (arr[i] < arr[evenidx] && arr[i] % 2 == 0) {
 					evenidx = i;
 				}
 			}
-			// 2-3 배열내 가장 작은 짝수값을 맨 앞으로 이동시키기
+			// 3-3 배열내 가장 작은 짝수값을 맨 앞으로 이동시키기
 			int temp = arr[j];
 			arr[j] = arr[evenidx];
 			arr[evenidx] = temp;
