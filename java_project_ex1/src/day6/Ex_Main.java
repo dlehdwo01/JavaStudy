@@ -35,6 +35,7 @@ public class Ex_Main {
 //		hong.info();
 //		lee.info();
 //		kim.info();
+		in.close();
 
 	}
 

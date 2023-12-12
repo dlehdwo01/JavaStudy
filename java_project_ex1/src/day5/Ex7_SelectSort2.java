@@ -70,7 +70,7 @@ public class Ex7_SelectSort2 {
 		System.out.println(Arrays.toString(arr));
 		int oddCnt = 0;
 		int evenCnt = 0;
-		int cnt = 1;
+//		int cnt = 1;
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] % 2 != 0) {
 				oddCnt++;

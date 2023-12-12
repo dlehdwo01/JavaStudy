@@ -26,8 +26,9 @@ public class Student {
 		this.stuName = stuName;
 		this.stuDept = stuDept;
 	}
-	Student(){
-		
+
+	Student() {
+
 	}
 
 	// 메소드
@@ -42,13 +43,12 @@ public class Student {
 		return this.age;
 	}
 
-	// 학생 정보 출력
-	void info() {
-		System.out.println("학번 : " + stuNo);
-		System.out.println("학과 : " + stuDept);
-		System.out.println("이름 : " + stuName);
-		System.out.println("나이 : " + age);
-		System.out.println("성별 : " + gender);
-	}
-
+//	// 학생 정보 출력
+//	void info() {
+//		System.out.println("학번 : " + stuNo);
+//		System.out.println("학과 : " + stuDept);
+//		System.out.println("이름 : " + stuName);
+//		System.out.println("나이 : " + age);
+//		System.out.println("성별 : " + gender);
+//	}
 }

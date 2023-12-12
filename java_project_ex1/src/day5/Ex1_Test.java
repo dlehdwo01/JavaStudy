@@ -1,15 +1,14 @@
 package day5;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Ex1_Test {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);
-		Random ran = new Random();
+		try (// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in)) {
+			Random ran = new Random();
 
 //		// 6번 문제 . 크기가 5인 int형 배열을 선언하고 사용자로부터 숫자를 입력받아서 5개의 값 넣기
 //		// 단, 0이하의 수를 입력하면 넣지 말고 다시 입력 받을 것
@@ -44,33 +43,35 @@ public class Ex1_Test {
 //		}
 //		System.out.println("입력된 숫자들 중 가장 큰 수와 작은 수의 차이 = " + (max - min));
 
-		// 9번 문제
-		int Q;
-		int cnt = 0;
-		for (;;) {
-			System.out.print("문제 수를 입력해주세요 : ");
-			Q = in.nextInt();
-			for (int i = 0; i < Q; i++) {
-				int A = ran.nextInt(8) + 2;
-				int B = ran.nextInt(9) + 1;
-				int C;
-				System.out.print((i + 1) + "번 문제 " + A + " * " + B + " = ");
-				C = in.nextInt();
-				if (C == A * B) {
-					cnt++;
-					System.out.println("정답입니다!");
-				} else {
-					System.out.println("오답입니다! 정답은 " + (A * B) + " 입니다.");
+			// 9번 문제
+			int Q;
+			int cnt = 0;
+			for (;;) {
+				System.out.print("문제 수를 입력해주세요 : ");
+				Q = in.nextInt();
+				for (int i = 0; i < Q; i++) {
+					int A = ran.nextInt(8) + 2;
+					int B = ran.nextInt(9) + 1;
+					int C;
+					System.out.print((i + 1) + "번 문제 " + A + " * " + B + " = ");
+					C = in.nextInt();
+					if (C == A * B) {
+						cnt++;
+						System.out.println("정답입니다!");
+					} else {
+						System.out.println("오답입니다! 정답은 " + (A * B) + " 입니다.");
+					}
+				}
+				System.out.println("총 " + Q + "문제 중 " + cnt + "문제 정답");
+				cnt = 0;
+				System.out.println("계속 하시려면 아무키를 입력해주세요. 종료는 0을 입력해주세요");
+				int end = in.nextInt();
+				if (end == 0) {
+					System.out.println("종료되었습니다.");
+					break;
 				}
 			}
-			System.out.println("총 " + Q + "문제 중 " + cnt + "문제 정답");
-			cnt = 0;
-			System.out.println("계속 하시려면 아무키를 입력해주세요. 종료는 0을 입력해주세요");
-			int end = in.nextInt();
-			if (end == 0) {
-				System.out.println("종료되었습니다.");
-				break;
-			}
+
 		}
 	}
 }

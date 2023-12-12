@@ -4,8 +4,8 @@ public class Ex2_ObjArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int intArr[] = new int[5];
-		String strArr[] = new String[5]; // String 이나 Person이나 클래스이다.
+//		int intArr[] = new int[5];
+//		String strArr[] = new String[5]; // String 이나 Person이나 클래스이다.
 
 		Person p = new Person();
 		Person hong = new Person("홍길동", 30);

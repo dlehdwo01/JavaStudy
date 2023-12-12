@@ -17,7 +17,7 @@ public class Ex1_Review {
 //
 		// 3번 문제
 //		int cnt = 0;
-//		Scanner in = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
 //		for (int i = 0; i < arr.length; i++) {
 //			cnt = i + 1;
 //			System.out.print(cnt + "번째 숫자를 입력하세요 : ");
@@ -58,7 +58,7 @@ public class Ex1_Review {
 		System.out.println("역슬래시를 출력하기 위해서 \\"); // \\역슬래시를 두개 붙이면 출력 가능
 		// 즉 \(역슬래시) 는 이스케이프문자라고 합니다.
 		
-		
+		in.close();
 
 	}
 

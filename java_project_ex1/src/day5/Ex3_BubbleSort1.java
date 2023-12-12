@@ -25,7 +25,7 @@ public class Ex3_BubbleSort1 {
 //		System.out.println(Arrays.toString(arr));
 
 
-		int s=in.nextInt();
+//		int s=in.nextInt();
 		int arr[] = { 7, 4, 5, 1, 3 };
 		
 		int temp;
@@ -39,6 +39,7 @@ public class Ex3_BubbleSort1 {
 			}
 		}
 		System.out.println(Arrays.toString(arr));
+		in.close();
 
 //		for (int i = 4; i >= 1; i--) {
 //			for (int j = 0; j < i; j++) {

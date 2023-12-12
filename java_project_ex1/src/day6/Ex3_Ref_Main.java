@@ -6,10 +6,10 @@ public class Ex3_Ref_Main {
 		// TODO Auto-generated method stub
 
 		Human hong = new Human("홍길동", 30);
-		Human kim = new Human("김철수", 20);
+//		Human kim = new Human("김철수", 20);
 
-		int a = 10;
-		int b = a;
+//		int a = 10;
+//		int b = a;
 
 		int num = 10;
 		hong.numAdd(num);
