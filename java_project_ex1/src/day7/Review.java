@@ -15,6 +15,7 @@ public class Review {
 		// hong 객체 나이 출력
 		System.out.println(hong.getAge());
 
+		
 	}
 
 }

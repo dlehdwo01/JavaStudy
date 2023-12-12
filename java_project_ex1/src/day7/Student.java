@@ -8,18 +8,26 @@ public class Student {
 	int age;
 	String gender;
 
+//	Student() {
+//		this.stuName = "알 수 없음";
+//	}
+
 	// 생성자
 	// 학번, 이름 초기화하는 생성자
+	// this() => 생성자에서 다른 생성자 호출
 	Student(int stuNo, String stuName) {
-		this.stuNo = stuNo;
-		this.stuName = stuName;
-	} 
+		this(stuNo, stuName, "");
+		System.out.println();
+	}
 
 	// 학번, 이름, 학과 초기화하는 생성자
 	Student(int stuNo, String stuName, String stuDept) {
 		this.stuNo = stuNo;
 		this.stuName = stuName;
 		this.stuDept = stuDept;
+	}
+	Student(){
+		
 	}
 
 	// 메소드

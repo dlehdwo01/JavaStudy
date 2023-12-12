@@ -16,7 +16,7 @@ public class Person {
 		this.name = name;
 	}
 
-	Person() {
+	public Person() {
 
 	}
 
