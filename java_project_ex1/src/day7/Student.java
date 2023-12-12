@@ -13,7 +13,7 @@ public class Student {
 	Student(int stuNo, String stuName) {
 		this.stuNo = stuNo;
 		this.stuName = stuName;
-	}
+	} 
 
 	// 학번, 이름, 학과 초기화하는 생성자
 	Student(int stuNo, String stuName, String stuDept) {
