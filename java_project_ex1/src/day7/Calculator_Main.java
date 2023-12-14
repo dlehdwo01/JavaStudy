@@ -23,7 +23,11 @@ public class Calculator_Main {
 		System.out.println(name.equals(name2)); // true
 		// 문자열을 비교할땐 부등호 '=' 를 사용하면 안되며
 		// 문자열을 비교할때는 꼭 name.equals(name2) 와 같이 equals 함수를 이용해야한다.
-		
+
+		// Calculator의 메소드 sum 앞에 static을 붙이면 객체 생성 상관없이 클래스내 메소드를 바로 사용 가능하다
+		Calculator.sum(1, 3);
+		Calculator.sum(2, 5, 9);
+		Calculator.sum(2.1, 3.3);
 	}
 
 }
