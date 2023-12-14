@@ -1,10 +1,10 @@
 package day8;
 
-public class Point {
+public class Ex6_Point {
 	private int x;
 	private int y;
 
-	Point(int x, int y) {
+	Ex6_Point(int x, int y) {
 		this.x = x;
 		this.x = y;
 	}

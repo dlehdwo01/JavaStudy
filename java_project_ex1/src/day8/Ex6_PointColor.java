@@ -1,9 +1,9 @@
 package day8;
 
-public class PointColor extends Point {
+public class Ex6_PointColor extends Ex6_Point {
 	private String color;
 
-	PointColor(int x, int y, String color) {
+	Ex6_PointColor(int x, int y, String color) {
 		super(x, y);
 //		super 입력시 실행됨 - 입력된 int타입의 x,y 매개체를 가지고 부모에게서 같은 매개체 타입의 생성자를 호출함
 //		Point xy = new Point(x, y); // 실행안됨 - 부모에게서 기본생성자를 호출하려고함
