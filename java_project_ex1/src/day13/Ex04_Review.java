@@ -13,7 +13,7 @@ public class Ex04_Review {
 
 		while (true) {
 
-			System.out.println("==== (1)추가  (2)판매  (3)수량확인  (그외)종료 ====");
+			System.out.println("==== (1)추가  (2)판매  (3)보유과일정보  (4)가격수정  (그외)종료 ====");
 			int choice = in.nextInt();
 
 			// 1번 추가
@@ -85,6 +85,7 @@ public class Ex04_Review {
 				for (int i = 0; i < list.size(); i++) {
 					if (list.get(i).get("name").equals(name)) {
 						System.out.println(name + "의 수량은 " + list.get(i).get("number") + "개 입니다.");
+						System.out.println(name + "의 가격은 " + list.get(i).get("price") + "원 입니다.");
 						flg = true;
 						break;
 					}
@@ -92,10 +93,31 @@ public class Ex04_Review {
 				if (flg == false) {
 					System.out.println("찾는 과일이 없습니다.");
 				}
+			}
+			// 4번 과일 가격 변경
+			else if (choice == 4) {
+				System.out.print("과일명을 입력하세요 : ");
+				String name = in.next();
+				boolean flg = false;
+				for (int i = 0; i < list.size(); i++) {
+					if (list.get(i).get("name").equals(name)) {
+						System.out.print("가격을 변경해주세요 : ");
+						int price = in.nextInt();
+						list.get(i).put("price", price);
+						System.out.print("변경이 완료되었습니다.");
+						flg = true;
+						break;
+					}
+				}
+				if (flg == false) {
+					System.out.println("찾는 과일이 없습니다.");
+				}
+
 			} else {
 				System.out.println("종료되었습니다...");
 				break;
 			}
+
 			System.out.println();
 		}
 	}
