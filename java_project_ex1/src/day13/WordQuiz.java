@@ -7,8 +7,6 @@ import java.util.Vector;
 public class WordQuiz {
 	private String name; // 퀴즈 프로그램의 이름
 	private Vector<Word> v;
-	Scanner in = new Scanner(System.in);
-	Random ran = new Random();
 
 	public WordQuiz(String name) {
 		this.name = name;
@@ -33,52 +31,40 @@ public class WordQuiz {
 	}
 
 	void run() {
-		System.out.println("'" + name + "'" + "의 단어 테스트를 시작합니다. -1을 입력하면 종료합니다.");
+		System.out.println("'" + name + "'의 단어 테스트를 시작합니다. -1을 입력하면 종료합니다.");
 		System.out.println("현재 " + v.size() + "개의 단어가 들어 있습니다.");
+		Scanner in = new Scanner(System.in);
+		Random ran = new Random();
 		while (true) {
-			int idx = ran.nextInt(v.size());
-			System.out.println(v.get(idx).getEnglish() + "?");
-			// 보기 1~4만들기
+			// 보기 4개 생성
 			int arr[] = new int[4];
-			arr[3] = idx; // 정답 위치값
-
-			for (int i = 0; i < 3; i++) {
-				int ex = ran.nextInt(v.size());
-				arr[i] = ex;
+			for (int i = 0; i < 4; i++) {
+				arr[i] = ran.nextInt(v.size());
 				for (int j = 0; j < i; j++) {
-					if (arr[i] == arr[j] || arr[j] == arr[3]) {
+					if (arr[i] == arr[j]) {
 						i--;
 					}
 				}
 			}
-			// 보기 랜덤 정렬
-			int order[] = new int[4];
-			for (int i = 0; i < 4; i++) {
-				int sort = ran.nextInt(4);
-				order[i] = sort;
-				for (int j = 0; j < i; j++) {
-					if (order[i] == order[j]) {
-						i--;
-					}
-				}
-			}
+			// 보기 4개중 1개 출제
+			int exno = ran.nextInt(4); // 정답 idx
+			System.out.println(v.get(arr[exno]).getEnglish() + "?");
 
-			// 보기 출력
-			for (int i = 0; i < 4; i++) {
-				String word = v.get(arr[order[i]]).getKorean();
-				System.out.print("(" + (i + 1) + ")" + word + " ");
+			// 보기 나열
+			for (int i = 0; i < arr.length; i++) {
+				System.out.print("(" + (i + 1) + ")" + v.get(arr[i]).getKorean() + " ");
 			}
-			System.out.print(" :>");
+			System.out.print(":>");
 
-			// 정답 맞추기
+			// 정답 입력
 			int answer = in.nextInt();
 			if (answer == -1) {
-				System.out.println("'" + name + "'" + "를 종료합니다...");
+				System.out.println(name + "를 종료합니다...");
 				break;
-			} else if (v.get(arr[order[answer - 1]]).getKorean().equals(v.get(idx).getKorean())) {
+			} else if (answer - 1 == exno) {
 				System.out.println("정답입니다 !!");
 			} else {
-				System.out.println("오답입니다.!!");
+				System.out.println("오답입니다. !!");
 			}
 		}
 	}

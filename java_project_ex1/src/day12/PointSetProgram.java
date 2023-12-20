@@ -5,34 +5,48 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 
-public class PlusTest {
+public class PointSetProgram {
+	Scanner in = new Scanner(System.in);
+	private HashMap<String, Integer> map = new HashMap<>();
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);
-		HashMap<String, Double> map = new HashMap<>();
-		System.out.println("미래장학금관리시스템입니다.");
+	PointSetProgram() {
+	}
 
+	public void start() {
+		System.out.println("** 포인트 관리 프로그램입니다 **");
 		for (int i = 0; i < 5; i++) {
-			System.out.print("이름과 학점>> ");
+			System.out.print("이름과 포인트 입력>> ");
 			String name = in.next();
-			double score = in.nextDouble();
-			map.put(name, score);
+			if (name.equals("그만")) {
+				break;
+			}
+			Integer point = in.nextInt();
+			if (map.get(name) != null) {
+				int n = map.get(name);
+				point = point + n;
+			}
+			map.put(name, point);
+			output();
+			System.out.println();
 		}
+	}
+
+	void output() {
 
 		Set<String> nameset = map.keySet();
 		Iterator<String> it = nameset.iterator();
-
-		System.out.println("장학생 선발 학점 기준 입력>> ");
-		double standard = in.nextDouble();
-		System.out.print("장학생 명단 : ");
-
 		while (it.hasNext()) {
 			String name = it.next();
-			if (standard <= map.get(name)) {
-				System.out.print(name + " ");
-			}
+			int point = map.get(name);
+			System.out.print("(" + name + "," + point + ")");
 		}
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PointSetProgram program = new PointSetProgram();
+		program.start();
 
 	}
 
