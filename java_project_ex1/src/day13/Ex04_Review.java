@@ -94,7 +94,7 @@ public class Ex04_Review {
 					System.out.println("찾는 과일이 없습니다.");
 				}
 			}
-			// 4번 과일 가격 변경
+			// 4번 과일 가격 변경a
 			else if (choice == 4) {
 				System.out.print("과일명을 입력하세요 : ");
 				String name = in.next();
