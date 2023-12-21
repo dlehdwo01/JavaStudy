@@ -46,7 +46,7 @@ public class Ex04_Review {
 					list.add(map);
 				}
 				System.out.println("정상적으로 입력되었습니다.");
-			}
+			} // 1번 종료
 
 			// 2번 판매
 			else if (choice == 2) {
@@ -75,7 +75,7 @@ public class Ex04_Review {
 				if (flg == false) {
 					System.out.println("찾는 과일이 없습니다.");
 				}
-			}
+			} // 2번 종료
 
 			// 3번 개수확인
 			else if (choice == 3) {
@@ -93,15 +93,15 @@ public class Ex04_Review {
 				if (flg == false) {
 					System.out.println("찾는 과일이 없습니다.");
 				}
-			}
-			// 4번 과일 가격 변경a
+			} // 3번 종료
+				// 4번 과일 가격 변경
 			else if (choice == 4) {
 				System.out.print("과일명을 입력하세요 : ");
 				String name = in.next();
 				boolean flg = false;
 				for (int i = 0; i < list.size(); i++) {
 					if (list.get(i).get("name").equals(name)) {
-						System.out.print("가격을 변경해주세요 : ");
+						System.out.print("가격을 입력해주세요 : ");
 						int price = in.nextInt();
 						list.get(i).put("price", price);
 						System.out.print("변경이 완료되었습니다.");
@@ -112,14 +112,11 @@ public class Ex04_Review {
 				if (flg == false) {
 					System.out.println("찾는 과일이 없습니다.");
 				}
-
 			} else {
 				System.out.println("종료되었습니다...");
 				break;
-			}
-
+			} // 4번 종료
 			System.out.println();
-		}
+		} // while 종료
 	}
-
 }
