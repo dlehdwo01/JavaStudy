@@ -16,7 +16,7 @@ public class Ex04_Review {
 			System.out.println("==== (1)추가  (2)판매  (3)보유과일정보  (4)가격수정  (그외)종료 ====");
 			int choice = in.nextInt();
 
-			// 1번 추가
+			// 1번 추가ㅁㅁㅁㅁ
 			if (choice == 1) {
 				HashMap<String, Object> map = new HashMap<>();
 				System.out.print("과일명을 입력해주세요 : ");
